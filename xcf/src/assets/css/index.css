@@ -1,0 +1,255 @@
+/*初始化一些东西*/
+* { 	
+  /*Firefox3.5+*/
+  -moz-box-sizing: border-box;
+  /*Safari3.2+*/
+  -webkit-box-sizing: border-box;
+  /*Opera9.6*/
+  -o-box-sizing: border-box; 
+  /*IE8*/
+  -ms-box-sizing: border-box; 
+   box-sizing: border-box;
+}
+html {
+	font-size: 20px;
+	font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,sans-serif!important;
+}
+body {
+	background: #fff;
+  color: #383835;
+}
+section {
+  display: block;
+}
+a {
+	text-decoration: none;
+}
+img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*头部开始*/
+#site-header {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0.55rem 1.0rem;
+  border-bottom: 0;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.08);
+}
+/*箭头开始*/
+#goback{
+    width: 1.0rem;
+    height: 1.0rem;
+    float: left;
+    position: relative;
+    top: 0.4rem;
+    margin-left: -0.25rem;
+    margin-right: 0.25rem;
+    display: block
+}
+/*箭头结束*/
+
+/*logo开始*/
+#logo {
+  height: 1.65rem;
+  float: left;
+  margin-top: 3px;
+  margin-right: 0.5rem;
+  /*background: #00f;*/
+}
+#logo > a {
+  display: inline-block;
+  height: 1.45rem;
+  margin: 0 auto;
+  width: 4.3rem;
+}
+/*logo结束*/
+
+/*搜索框开始*/
+#site-header > form > input {
+  display: block;
+  float: right;
+  font-size: 0.7rem;
+  height: 1.45rem;
+  margin-top: 3px;
+  line-height: 1.45rem;
+  padding-left: 1.75rem;
+  width: 10.15rem;
+  box-sizing: border-box;
+  border: 1px solid #e8e6e5;
+  background: url(../images/search.png) 0.2rem 0.2rem no-repeat;
+  background-repeat: no-repeat;
+  background-size: 1.0rem;
+  /*background-position: /*8px 14px*/
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+/*搜索框结束*/
+/*头部结束*/
+
+/*主页主体开始*/
+/*分类标题开始*/
+.category-section-title {
+  margin: 1.0rem 1.0rem 10px;
+  font-size: 0.85rem;
+}
+/*分类标题结束*/
+
+/*分类详解开始*/
+.category-section {
+  overflow: hidden;
+  padding: 0 0 0 1.0rem;
+}
+.category-section > .tile-link {
+  float: left;
+  width: 21%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 21%;
+  position: relative;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  background: #fafaf8;
+  border-radius: 3px;
+}
+.category-section > .tile-link > .cover {
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background:#000;
+  position: absolute;
+}
+.category-section > .tile-link > .taxon {
+  position: absolute;
+  bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+/*分类详解结束*/
+/*主页主体结束*/
+
+/*列表页主体开始*/
+/*类名开始*/
+.site-list-taxon {
+  width: 100%;
+  height: auto;
+  padding: 1.0rem;
+  overflow: hidden; 
+}
+.site-list-taxon > h2 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  float: left;
+}
+.site-list-taxon > ul {
+  float: right;
+}
+.site-list-taxon > ul > li {
+  display: inline-block;
+  margin-left: 0.75rem;
+  line-height: 1.6rem; 
+  font-size: 0.75rem;
+}
+.site-list-taxon > ul > li > a {
+  color: #b3b3b1;
+}
+.site-list-taxon > ul > li > .light-gray-font {
+  color: #fa6650;
+}
+/*类名结束*/
+
+/*内容开始*/
+/*菜名开始*/
+#add-more-container {
+ margin: 1.0rem 0;
+ overflow: hidden;
+}
+#add-more-container > a {
+  padding: 0 0 0.75rem;
+  color: #383835;
+  margin: 0 1.0rem;
+  display: block;
+}
+#add-more-container > a > div {
+  width: 100%;
+  height: 4.75rem;
+}
+#add-more-container > a aside {
+  width: 7.0rem;
+  height: 4.75rem;
+  float: left;
+  /*background: #00f;*/
+  overflow: hidden;
+}
+.add-more-container-right {
+  float: left;
+  line-height: 0.8rem;
+  width: 9.7rem;
+  /*background: #0f0;*/
+  padding-left: 0.6rem;
+}
+.greensname {
+  width: 1px;
+  min-width: 100%;
+  font-size: 0.9rem;
+  padding: 0.1rem 0 0.5rem;
+  line-height: 1.1rem;
+}
+.add-more-container-right > div {
+  color: #777;
+  font-size: 0.6rem;
+    line-height: 0.8rem;
+}
+/*菜名结束*/
+
+/*更多开始*/
+#add-more-button {
+  margin: 1.0rem 0;
+  padding: 0 1.0rem;
+}
+#add-more-button > a {
+  text-align: center;
+  border: 1px solid #fa6650;
+  display: block;
+  height: 2.4rem;
+  font-size: 0.85rem;
+  color: #fa6650;
+  line-height: 2.3rem;
+}
+/*更多结束*/
+
+/*内容结束*/
+/*列表页主体结束*/
+
+/*回到顶部开始*/
+#backtotop{
+  width: 1.2rem;
+  color: gray;
+  padding: 0.6rem 0 0.6rem 0.25rem;
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  text-align: center;
+  z-index: 20;
+  top: 20.7rem;
+  right: 0px;
+  font-size: 0.7rem;
+  line-height: 1.0rem;
+  display: none;
+  border:1px solid #ccc;
+  background-color:#e1e1e1;
+  border-radius: 0.6rem 0 0 0.6rem;
+}
+/*回到顶部结束*/
